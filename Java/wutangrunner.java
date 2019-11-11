@@ -44,8 +44,8 @@ public class wutangrunner
                           {  
      public void actionPerformed(ActionEvent e) {
       String Storename = enter.getText();
-     wutang new = wuu wutang;
-     checkReal new = real checkReal(Storename);
+     wutang wuu = new wutang();
+     String real = wuu.checkReal(Storename);
      
       //System.out.println(Storename.indexOf(' '))
      }
