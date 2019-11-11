@@ -49,7 +49,7 @@ public class wutangrunner
      
       //System.out.println(Storename.indexOf(' '))
      }
-       JOptionPane.showMessageDialog(null, "Your name is " + fname);
+       JOptionPane.showMessageDialog(null, "Your name is " + real);
      }
    });
 
