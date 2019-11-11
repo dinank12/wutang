@@ -12,10 +12,8 @@ public class wutangrunner
    JFrame frame = new JFrame("THECRAZYSUPERCOOLNAMEGENERATOR!");
    frame.setSize(1292,995);
    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    
-
    JLabel na= new JLabel("Enter yo First AND Last name fool");
-   na.setHorizontalAlignment(SwingConstants.LEFT);
+   
    na.setForeground(new Color(0, 128, 128));
    
    na.setFont(new Font("Sitka Banner", Font.BOLD, 35));
@@ -34,14 +32,13 @@ public class wutangrunner
    wu.setVisible(true);  
    wu.setBounds(432,227,150,100);
    
-   frame.getContentPane().setLayout(null);
    frame.setVisible(true);
-   frame.getContentPane().add(wu);
-   frame.getContentPane().add(enter);
-   frame.getContentPane().add(na);
+   frame.add(wu);
+   frame.add(enter);
+   frame.add(na);
    JLabel ew = new JLabel(icon);
    ew.setBounds(0, 0, 1280,960);
-   frame.getContentPane().add(ew);
+   frame.add(ew);
    
    wu.addActionListener(new ActionListener() 
                           {  
@@ -51,22 +48,23 @@ public class wutangrunner
       String a = Storename.substring(0,Storename.indexOf(' '));
       int a1 = a.length();
       //Split into first and last names for length
-     
+     String fname;
       String b = Storename.substring(Storename.indexOf(' ')+1);
       int b1 = b.length();
-      String checkUgly = "jariel";
-      if ( a.equals(checkUgly)){
-      a1 = a1 + 2;
-        b1 =b1 + 2;
-      }
+      String checkreal = "Donald Glover";
+      if ( Storename.equals(checkreal)){
+       fname = "Childish Gambino";
+      }else {
+      
        //System.out.println(a1);
       wutang wee = new wutang();
-      String fname = wee.getName(a1,b1); 
-      JOptionPane.showMessageDialog(null, "Your name is " + fname);
+      fname = wee.getName(a1,b1); 
+     
             
      }
-   
+       JOptionPane.showMessageDialog(null, "Your name is " + fname);
+     }
    });
-   
+
   }
 }

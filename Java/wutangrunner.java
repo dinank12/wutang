@@ -44,23 +44,10 @@ public class wutangrunner
                           {  
      public void actionPerformed(ActionEvent e) {
       String Storename = enter.getText();
-      //System.out.println(Storename.indexOf(' '));
-      String a = Storename.substring(0,Storename.indexOf(' '));
-      int a1 = a.length();
-      //Split into first and last names for length
-     String fname;
-      String b = Storename.substring(Storename.indexOf(' ')+1);
-      int b1 = b.length();
-      String checkreal = "Donald Glover";
-      if ( Storename.equals(checkreal)){
-       fname = "Childish Gambino";
-      }else {
-      
-       //System.out.println(a1);
-      wutang wee = new wutang();
-      fname = wee.getName(a1,b1); 
+     wutang new = wuu wutang;
+     checkReal new = real checkReal(Storename);
      
-            
+      //System.out.println(Storename.indexOf(' '))
      }
        JOptionPane.showMessageDialog(null, "Your name is " + fname);
      }

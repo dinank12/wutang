@@ -8,7 +8,7 @@ public class wutang
     public static String[]Last = { " Stain"," Fiend" , " Foos"," Gambino"," Tha Ting"," 69"," Glizzy"," Slasher" , " Gatrachos", " Narcissist",
       " Jesus", " Tha Head", " Tha Fornicator", " Capstar" ,"Pupil", "-E", "Desperado", "RainmaKer"};
     
-public String getName(int a1, int b1)
+public  String getName(int a1, int b1)
 {
 
   //System.out.println("enter first");
@@ -31,23 +31,4 @@ public String getName(int a1, int b1)
       String fname = First[ length ] + Last[ lengthb];
         return fname;
 }
-public  String checkReal(String Storename)
-{
-  String a = Storename.substring(0,Storename.indexOf(' '));
-      int a1 = a.length();
-      //Split into first and last names for length
-     String fname;
-      String b = Storename.substring(Storename.indexOf(' ')+1);
-      int b1 = b.length(); 
-  String checkreal = "Donald Glover";
-      if ( Storename.equals(checkreal)){
-        return fname = "Childish Gambino";
-      }else {   
-        getName name = new getName(a1, b1);
-        return fname = name;
-//System.out.println(a1);
-   
-      }
-            
-} 
 }
